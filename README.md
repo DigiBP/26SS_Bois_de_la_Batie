@@ -1,7 +1,7 @@
 # 26SS_Bois_de_la_Batie
 
 
-Obtaining an apprenticeship is generally considered moderately challenging, as the process combines elements of a job search with certain academic requirements. While there are many apprenticeship positions available, competition can be strong in more popular fields such as business or healthcare, making it harder for some applicants to secure a place. Students are typically required to submit a CV, a motivation letter, and school reports, and need to pass interviews where their attitude and suitability are evaluated. 
+Obtaining an apprenticeship is generally considered moderately challenging, as the process combines elements of a job search with certain academic requirements. While there are many apprenticeship positions available in Switzerland, competition can be strong in more popular fields such as business or healthcare, making it harder for some applicants to secure a place. Students are typically required to submit a CV, a motivation letter, and school reports, and need to pass interviews where their attitude and suitability are evaluated. 
 
 Our role as Human Resources is to support the company in managing this process by handling applications efficiently and making the experience as flexible and user-friendly as possible.
 
