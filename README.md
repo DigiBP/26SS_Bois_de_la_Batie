@@ -4,7 +4,7 @@
 
 | Name  | Role | Email Address |
 | ------------- | ------------- | ------------- |
-| Joël Grolimund  | BPMN  | joel.grolimund@students.fhnw.ch |
+| Joël Grolimund  | BPMN Expert | joel.grolimund@students.fhnw.ch |
 | Samed Öztürk  | IT Specialist  | samed.oeztuerk@students.fhnw.ch |
 | Sara Afzalinia  | HR Expert  | sara.afzalinia@students.fhnw.ch |
 | Thea Amoy  | HR Expert  | theayzabelle.amoy@students.fhnw.ch |
