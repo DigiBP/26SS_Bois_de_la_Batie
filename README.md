@@ -35,6 +35,12 @@ The current process requires extensive verification to ensure compliance with fe
 
 The process relies heavily on manual exchanges between stakeholders: the company's HR (us), the candidate and their legal guardians, indirectly the school and the State. Documents and feedback are repeatedly sent back and forth, creating delays and increasing the risk of miscommunication.
 
+### 2. Repetitive Verification Activities
+
+The HR department is required to review and validate documents multiple times throughout the process (e.g., after initial submission, after feedback loops, and before final approval). This repetition represents a redundancy which increases workload without actually adding considerable value.
+
+###
+
 # TO BE
 <img width="7980" height="2595" alt="Bild" src="https://github.com/user-attachments/assets/e2f3c814-7a68-4367-8a89-71d53ce95df6" />
 
