@@ -1,4 +1,4 @@
-# End-to-End Hiring & Contract Negotiation Automation
+# End-to-End Hiring & Contracting Automation
 
 ## Team Bois de la Batie
 
