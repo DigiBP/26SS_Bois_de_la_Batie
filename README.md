@@ -26,20 +26,21 @@ In this project, we focus on the improvement of the hiring and contracting proce
 
 
 # AS IS
-<img width="9234" height="2640" alt="Hiring_Apprentice_AS-IS" src="https://github.com/user-attachments/assets/861529eb-281b-47aa-be10-226282f6cf2a" />
+<img width="9234" height="2640" alt="Hiring_Apprentice_AS-IS" src="Hiring_Apprentice_AS-IS.png" />
 
-## Limitations
-The current process requires extensive verification to ensure compliance with federal and cantonal regulations, as well as applicable collective labor agreements (Gesamtarbeitsverträge), resulting in a significant administrative workload for employees. 
+## Limitations in the AS-IS process
+The AS-IS process for hiring apprentices in Switzerland is built around paper forms, manual data entry, and sequential coordination across multiple parties. Every step depends on a single HR contact chasing documents, re-entering contract details by hand, and personally triggering each follow-up action in turn. The result is a process that is slow to complete, sensitive to errors, and difficult to scale — particularly when a guardian signature or a late correction throws the whole sequence off course.
 
-### 1. High Level of Manual Interactions
-
-The process relies heavily on manual exchanges between stakeholders: the company's HR (us), the candidate and their legal guardians, indirectly the school and the State. Documents and feedback are repeatedly sent back and forth, creating delays and increasing the risk of miscommunication.
-
-### 2. Repetitive Verification Activities
-
-The HR department is required to review and validate documents multiple times throughout the process (e.g., after initial submission, after feedback loops, and before final approval). This repetition represents a redundancy which increases workload without actually adding considerable value.
-
-###
+### 1. Paper-based intake
+The process starts with physical or email-attached documents that must be manually sent, completed, and returned, introducing delays before HR can even begin.
+### 2. Manual contract creation
+Every hire requires HR to look up and re-enter occupation codes, salary bands, and duration from the cantonal VET template, with no reuse of prior data or smart defaults.
+### 3. Late error detection
+Contract mistakes only surface during the review stage, well into the process, triggering a correction feedback loop that sends work back to HR and restarts the clock.
+### 4. Fragmented multi-party coordination
+The candidate, guardian (for minors), and HR each operate in separate lanes with no shared digital workspace, meaning every cross-party step relies on manual communication and follow-up.
+### 5. Disconnected close-out tasks 
+Once the contract is signed, HR must manually trigger each wrap-up action in sequence: saving to the system, creating a new entry, removing the job posting, and informing the school — none of which are linked or automated.
 
 # TO BE
 <img width="7980" height="2595" alt="Bild" src="https://github.com/user-attachments/assets/e2f3c814-7a68-4367-8a89-71d53ce95df6" />
