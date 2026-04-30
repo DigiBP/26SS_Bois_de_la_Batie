@@ -1,4 +1,6 @@
 # End-to-End Hiring & Contracting Automation
+<img width="2172" height="724" alt="ChatGPT Image Apr 30, 2026, 02_29_38 PM" src="https://github.com/user-attachments/assets/419794f7-1394-4405-93f9-90666385e458" />
+
 
 # 1. Introduction
 ## 1.1 Team Bois de la Batie
