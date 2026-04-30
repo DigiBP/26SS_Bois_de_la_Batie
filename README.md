@@ -41,7 +41,8 @@ The objective of this initiative is to analyze, standardize, and automate the pr
 Out of scope are activities related to candidate sourcing (including job postings and candidate outreach), interviews and evaluations, and post-onboarding processes. Payroll management and any changes to legal or regulatory frameworks are also excluded.
 
 # 2. AS IS
-<img width="9234" height="2640" alt="Hiring_Apprentice_AS-IS" src="Hiring_Apprentice_AS-IS.png" />
+
+<img width="10104" height="2940" alt="Hiring_Apprentice_AS-IS" src="https://github.com/user-attachments/assets/bded92cd-71d8-46da-b0c2-6c32f42ea789" />
 
 ## 2.1 Stakeholders
 
@@ -63,7 +64,7 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 # 3. TO BE
 
-<img width="7980" height="2595" alt="Bild" src="https://github.com/user-attachments/assets/e2f3c814-7a68-4367-8a89-71d53ce95df6" />
+<img width="9420" height="1815" alt="Hiring_Apprentice_TO-BE" src="https://github.com/user-attachments/assets/d0aea8c2-915e-4299-bcdb-66c828d09791" />
 
 ## 3.1 Process Optimization
 
