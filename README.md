@@ -27,7 +27,18 @@ In this project, we focus on the improvement of the hiring and contracting proce
 
 ## 1.4 Use Case & Scope
 
-XXX
+The case focuses on the end-to-end hiring and contract management process for apprentices, from candidate selection to contract signing and onboarding preparation. The process involves multiple stakeholders, including HR, hiring managers, candidates, and, where applicable, legal guardians. It requires strict compliance with federal and cantonal regulations, as well as applicable collective labour agreements (Gesamtarbeitsverträge).
+
+Currently, the process is characterized by:
+
+- Multiple manual document exchanges
+- Repeated compliance and document verification steps
+- Iterative feedback loops between stakeholders
+- Manual contract creation and validation
+
+The objective of this initiative is to analyze, standardize, and automate the process to improve efficiency, ensure compliance, and enhance the overall experience for both HR and the candidates.
+
+Out of scope are activities related to candidate sourcing (including job postings and candidate outreach), interviews and evaluations, and post-onboarding processes. Payroll management and any changes to legal or regulatory frameworks are also excluded.
 
 # 2. AS IS
 <img width="9234" height="2640" alt="Hiring_Apprentice_AS-IS" src="Hiring_Apprentice_AS-IS.png" />
@@ -56,11 +67,17 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ## 3.1 Process Optimization
 
-XXX
+- Set up of Google forms to have standardized input 
 
 ## 3.2 Automation
 
-XXX
+- DMN table automation for salary calculation
+- Population of the template contract from information received from candidate and the salary from DMN
+- Set up of automatic sending to guardians for candidates under 18
+- Automatic upload of contract once approved
+- Generation of AI profile (for the internal ads)
+- Informing the school
+- Notification of HR to remove job posting
 
 ## 3.3 Technologies 
 Make Scenarios, Supabase Database (Technologies used?)
