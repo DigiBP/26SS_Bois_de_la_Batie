@@ -80,7 +80,16 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 - Notification of HR to remove job posting
 
 ## 3.3 Technologies 
-Make Scenarios, Supabase Database (Technologies used?)
+
+a. Camunda 
+XXX
+
+b. Make
+XXX
+
+c. Supabase
+XXX
+
 
 ## 4. Final State
 
