@@ -24,9 +24,16 @@ Our role as Human Resources is to support the company in managing this process b
 
 In this project, we focus on the improvement of the hiring and contracting process. This includes mapping the journey from the moment a candidate is selected, to their signing of the contract, up to the successful filling of the position. The current process requires extensive verification to ensure compliance with federal and cantonal regulations, as well as applicable collective labor agreements (Gesamtarbeitsverträge), resulting in a significant administrative workload for employees.
 
+## Use Case & Scope
+
+XXX
 
 # AS IS
 <img width="9234" height="2640" alt="Hiring_Apprentice_AS-IS" src="Hiring_Apprentice_AS-IS.png" />
+
+## Stakeholders
+
+XXX
 
 ## Limitations in the AS-IS process
 The AS-IS process for hiring apprentices in Switzerland is built around paper forms, manual data entry, and sequential coordination across multiple parties. Every step depends on a single HR contact chasing documents, re-entering contract details by hand, and personally triggering each follow-up action in turn. The result is a process that is slow to complete, sensitive to errors, and difficult to scale — particularly when a guardian signature or a late correction throws the whole sequence off course.
@@ -43,6 +50,22 @@ The candidate, guardian (for minors), and HR each operate in separate lanes with
 Once the contract is signed, HR must manually trigger each wrap-up action in sequence: saving to the system, creating a new entry, removing the job posting, and informing the school — none of which are linked or automated.
 
 # TO BE
+
 <img width="7980" height="2595" alt="Bild" src="https://github.com/user-attachments/assets/e2f3c814-7a68-4367-8a89-71d53ce95df6" />
 
+## Process Optimization
 
+XXX
+
+## Automation
+
+XXX
+
+## Technologies 
+Make Scenarios, Supabase Database (Technologies used?)
+
+## Final State
+
+# Conclusion/Recommendation
+
+XXX
