@@ -82,19 +82,13 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ## 3.3 Technologies 
 
-a. Camunda <br>
-Orchestrator of tasks. 
-
-b. Make <br>
-Scenario-making tool. 
-
-c. Supabase <br>
-Database
-
-d. POST <br>
-
-
-e. Fill Out forms <br>
+| Tool  | Purpose |
+| ------------- | ------------- |
+| Camunda  |  Orchestrator of tasks. |
+| Make  |  Scenario-making tool.  |
+| Supabase  |  Database. |
+| POST  |  XXX |
+| Fill out form  |  Form. |
 
 
 ## 4. Final State
