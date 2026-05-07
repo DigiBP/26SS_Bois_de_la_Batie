@@ -70,7 +70,9 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ## 3.1 Process Optimization
 
-- Set up of Google forms to have standardized input 
+- Set up of Google forms to have standardized input (Hidden identifier for the candidate althroughout the process)
+
+
 
 ## 3.2 Automation
 
