@@ -48,7 +48,7 @@ Out of scope are activities related to candidate sourcing (including job posting
 
 ## 2.1 Stakeholders
 
-XXX
+The process involves three key stakeholders. The HR of the Company drives the overall hiring process from start to finish. The Apprentice and their Guardian participate by filling out forms and reviewing and signing documents. Finally, the Parent is involved when the apprentice is under 18 years old and a parental signature is required.
 
 ## 2.2 Limitations in the AS-IS process
 The AS-IS process for hiring apprentices in Switzerland is built around paper forms, manual data entry, and sequential coordination across multiple parties. Every step depends on a single HR contact chasing documents, re-entering contract details by hand, and personally triggering each follow-up action in turn. The result is a process that is slow to complete, sensitive to errors, and difficult to scale — particularly when a guardian signature or a late correction throws the whole sequence off course.
