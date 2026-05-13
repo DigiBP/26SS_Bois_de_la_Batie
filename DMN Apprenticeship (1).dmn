@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1fq47n8" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.35.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.24.0">
+  <decision id="Decision_15jji0x" name="Decision Key Points Apprenticship" camunda:historyTimeToLive="180">
+    <decisionTable id="DecisionTable_1kzfs81" hitPolicy="FIRST">
+      <input id="InputClause_1nuqp39" label="Job" biodi:width="192">
+        <inputExpression id="LiteralExpression_1g81p35" typeRef="string">
+          <text>job</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0x9fr71" label="salaryY1" name="salaryY1" typeRef="string" />
+      <output id="OutputClause_0eyhtyo" label="salaryY2" name="salaryY2" typeRef="string" />
+      <output id="OutputClause_1d4ea7r" label="salaryY3" name="salaryY3" typeRef="string" />
+      <output id="OutputClause_1fiwvso" label="weeksOfHolidaysY1" name="weeksOfHolidaysY1" typeRef="string" />
+      <output id="OutputClause_0c1c72w" label="weeksOfHolidaysY2" name="weeksOfHolidaysY2" typeRef="string" />
+      <output id="OutputClause_0j1oblh" label="weeksOfHolidaysY3" name="weeksOfHolidaysY3" typeRef="string" />
+      <rule id="DecisionRule_1v5267t">
+        <inputEntry id="UnaryTests_16odv9a">
+          <text>"Logistics EBA"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01hapni">
+          <text>900</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0j43l0y">
+          <text>1100</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1r2v3wd">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1hoklo1">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_12fbhfw">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ppotbh">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nasvgm">
+        <inputEntry id="UnaryTests_1d0qxuv">
+          <text>"Logistics EFZ"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ph4upk">
+          <text>900</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_17wc0s9">
+          <text>1100</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0kk2iqe">
+          <text>1450</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0999yph">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ynys2g">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_03gt60j">
+          <text>5</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1q57nc7">
+        <inputEntry id="UnaryTests_1nv68xp">
+          <text>"Sales EBA"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bbu391">
+          <text>835</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ux38qq">
+          <text>1050</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0wps2z4">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1fw4wff">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_06pjth8">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0b9sfvd">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1eok4pk">
+        <inputEntry id="UnaryTests_070gncd">
+          <text>"Sales EFZ"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j9v3qh">
+          <text>835</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0udbaoq">
+          <text>1050</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0s7wrmo">
+          <text>1520</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hz562b">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0j8zjie">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1s9qwz3">
+          <text>5</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08pngpn">
+        <inputEntry id="UnaryTests_0ra5u7z">
+          <text>"Commercial EBA"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h4m03c">
+          <text>835</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_12565k7">
+          <text>1050</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0137n24">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ka7d7u">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_12u3u1w">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1iu7j86">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1elxd6i">
+        <inputEntry id="UnaryTests_0g2ed1f">
+          <text>"Commercial EFZ"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04igzkq">
+          <text>835</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0l9k5c3">
+          <text>1050</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0rdnepv">
+          <text>1520</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_15y8p02">
+          <text>6</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0r7x16p">
+          <text>5</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1nokjnn">
+          <text>5</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape id="DMNShape_1m2693f" dmnElementRef="Decision_15jji0x">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
