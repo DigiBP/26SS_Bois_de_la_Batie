@@ -42,13 +42,15 @@ The objective of this initiative is to analyze, standardize, and automate the pr
 
 Out of scope are activities related to candidate sourcing (including job postings and candidate outreach), interviews and evaluations, and post-onboarding processes. Payroll management and any changes to legal or regulatory frameworks are also excluded.
 
+## 1.5 Stakeholders
+
+The process involves three key stakeholders. The HR of the Company drives the overall hiring process from start to finish. The Apprentice and their Guardian participate by filling out forms and reviewing and signing documents. Finally, the Parent is involved when the apprentice is under 18 years old and a parental signature is required.
+
 # 2. AS IS
 
 <img width="10104" height="2940" alt="Hiring_Apprentice_AS-IS" src="https://github.com/user-attachments/assets/bded92cd-71d8-46da-b0c2-6c32f42ea789" />
 
-## 2.1 Stakeholders
 
-The process involves three key stakeholders. The HR of the Company drives the overall hiring process from start to finish. The Apprentice and their Guardian participate by filling out forms and reviewing and signing documents. Finally, the Parent is involved when the apprentice is under 18 years old and a parental signature is required.
 
 ## 2.2 Limitations in the AS-IS process
 The AS-IS process for hiring apprentices in Switzerland is built around paper forms, manual data entry, and sequential coordination across multiple parties. Every step depends on a single HR contact chasing documents, re-entering contract details by hand, and personally triggering each follow-up action in turn. The result is a process that is slow to complete, sensitive to errors, and difficult to scale — particularly when a guardian signature or a late correction throws the whole sequence off course.
@@ -76,7 +78,7 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ## 3.2 Automations
 
-### 3.3 Automation of email sending to candidate and guardian
+### 3.2.1 Automation of email sending to candidate and guardian
 
 Once the candidate accepts the offer, the process of obtaining their personal information begins. 
 
