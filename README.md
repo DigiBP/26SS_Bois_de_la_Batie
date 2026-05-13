@@ -68,13 +68,24 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 <img width="9420" height="1815" alt="Hiring_Apprentice_TO-BE" src="https://github.com/user-attachments/assets/d0aea8c2-915e-4299-bcdb-66c828d09791" />
 
-## 3.1 Process Optimization
+## 3.1 Process Optimizations
 
 - Set up of Google forms to have standardized input (Hidden identifier for the candidate althroughout the process)
 
 
 
-## 3.2 Automation
+## 3.2 Automations
+
+### 3.3 Automation of email sending to candidate and guardian
+
+Once the candidate accepts the offer, the process of obtaining their personal information begins. 
+
+<img width="923" height="217" alt="Screenshot 2026-05-13 at 15 50 58" src="https://github.com/user-attachments/assets/077c1146-f250-49e2-8899-0e9120db7097" />
+
+The candidate and their guardian receives an email prompting them to complete an employee form. This includes information that will eventually be used to finalize the contract.
+
+<u>Make Scenario</u>: Ingration HTTP Gmail
+
 
 - DMN table automation for salary calculation
 - Population of the template contract from information received from candidate and the salary from DMN
