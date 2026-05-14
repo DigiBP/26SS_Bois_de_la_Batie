@@ -76,7 +76,7 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 A standardized input form was set up to ensure consistent data collection, making it easier to automatically populate the apprenticeship contract template.
 
-## 3.2 Systematic Corrections
+### 3.1.2 Systematic Corrections
 
 Corrections have traditionally been a significant time drain for HR users, involving back-and-forth emails and calls, as well as manual updates to both the contract and the database. To address this pain point, we implemented a systematic correction process.
 
@@ -85,12 +85,15 @@ There are two points in the process where corrections can be made. First, once t
 This approach reduces unnecessary back-and-forth between parties, ensures that all changes are documented, and keeps the overall process moving efficiently.
 
 <br> <ins> Camunda Task Modeler </ins> : Pre-Contract Generation (First Instance of Corrections)
+
 <br> <img width="1271" height="658" alt="Screenshot 2026-05-14 at 18 07 04" src="https://github.com/user-attachments/assets/bebe391a-f77e-4ffc-9356-90aecc90e32c" />
 
 <br> <ins> Fill out Form </ins> : Correction Request (Second Instance of Corrections)
+
 <br> <img width="629" height="474" alt="Screenshot 2026-05-14 at 18 36 07" src="https://github.com/user-attachments/assets/67f70c0b-2318-4fae-9796-4a22cbf87e76" />
 
 <br> <ins> Make Scenario </ins> : Fillout Correction Form
+
 <br> <img width="504" height="263" alt="Screenshot 2026-05-14 at 22 28 27" src="https://github.com/user-attachments/assets/1842d027-34a3-47f3-9b48-a409b3062873" />
 
 ## 3.2 Automations
