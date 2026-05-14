@@ -85,20 +85,13 @@ There are two points in the process where corrections can be made. First, once t
 This approach reduces unnecessary back-and-forth between parties, ensures that all changes are documented, and keeps the overall process moving efficiently.
 
 <br> <ins> Camunda Task Modeler </ins> : Pre-Contract Generation (First Instance of Corrections)
-<img width="1271" height="658" alt="Screenshot 2026-05-14 at 18 07 04" src="https://github.com/user-attachments/assets/bebe391a-f77e-4ffc-9356-90aecc90e32c" />
-
+<br> <img width="1271" height="658" alt="Screenshot 2026-05-14 at 18 07 04" src="https://github.com/user-attachments/assets/bebe391a-f77e-4ffc-9356-90aecc90e32c" />
 
 <br> <ins> Fill out Form </ins> : Correction Request (Second Instance of Corrections)
-<img width="629" height="474" alt="Screenshot 2026-05-14 at 18 36 07" src="https://github.com/user-attachments/assets/67f70c0b-2318-4fae-9796-4a22cbf87e76" />
+<br> <img width="629" height="474" alt="Screenshot 2026-05-14 at 18 36 07" src="https://github.com/user-attachments/assets/67f70c0b-2318-4fae-9796-4a22cbf87e76" />
 
-
-<br> <ins> Make Scenario </ins> : Supabase Update
-<img width="1075" height="282" alt="Screenshot 2026-05-14 at 18 11 59" src="https://github.com/user-attachments/assets/0973285e-e823-4cae-8766-d7884bd2b1ab" />
-
-In case of corrections, the HR user can implement them in Camunda directly. Those changes will then be reflected in Supabase via this trigger:
-
-<br> <ins> Make Scenario </ins> : Supabase Update
-<img width="1075" height="282" alt="Screenshot 2026-05-14 at 18 11 59" src="https://github.com/user-attachments/assets/0973285e-e823-4cae-8766-d7884bd2b1ab" />
+<br> <ins> Make Scenario </ins> : Fillout Correction Form
+<br> <img width="504" height="263" alt="Screenshot 2026-05-14 at 22 28 27" src="https://github.com/user-attachments/assets/1842d027-34a3-47f3-9b48-a409b3062873" />
 
 ## 3.2 Automations
 
@@ -145,14 +138,36 @@ Once the information is extracted, the HR user can verify all required informati
 
 <br> <ins> Make Scenario </ins> : PDF Generation and Send email
 
-<img width="1051" height="285" alt="Screenshot 2026-05-14 at 18 18 19" src="https://github.com/user-attachments/assets/65520257-3e99-40b2-9fe4-58bc224ad585" />
+<br> <img width="1051" height="285" alt="Screenshot 2026-05-14 at 18 18 19" src="https://github.com/user-attachments/assets/65520257-3e99-40b2-9fe4-58bc224ad585" />
 
-### 3.2.4. Set up of automatic sending to guardians for candidates under 18
+The information received from the candidate, as well as the results of the DMN table, will be integrated in the Apprentice Contract template form using the integration PDF.co.
 
-Once the HR user confirms the data has been received in Camunda, the Apprentice contract will be generated and uploaded to Supabase. In the latter part of the scenario, a router has been put in place to determine whether the contract should be sent only to the candidate or to the candidate and their respective guardian. It uses the aforementioned variable "is_adult," created earlier in the process.
+### 3.2.4. Set up automatic sending to guardians for candidates under 18
+
+Once the HR user confirms the data has been received in Camunda, the Apprentice contract will be generated in PDF format and uploaded to Supabase. In the latter part of the scenario, a router has been put in place to determine whether the contract should be sent only to the candidate or to the candidate and their respective guardian. It uses the aforementioned variable "is_adult," created earlier in the process.
+
+### 3.2.5. Automated Update of Database in case of corrections
+
+In case of corrections, the HR user can implement them in Camunda directly. Those changes will then be reflected in Supabase via this trigger:
+
+<br> <ins> Make Scenario </ins> : Supabase Update
+<img width="1075" height="282" alt="Screenshot 2026-05-14 at 18 11 59" src="https://github.com/user-attachments/assets/0973285e-e823-4cae-8766-d7884bd2b1ab" />
+
+The HR user will be able to view the corrections to be made in Camunda Task Modeler under the field "Candidate Feedback Request". They can then implement those changes and go along the process of confirming, generating the contract, and sending it to the candidate (and their guardian, if applicable) for signature.
+
+### 3.2.6. Automatic upload of the contract once approved
+
+If the candidate signs the contract, they will need to click the first link in the e-mail they receive. They will be sent to another form where they can upload the document.
+
+<br> <ins> Fill out form </ins> : Signed Apprenticeship Contract Upload
+<br> <img width="562" height="575" alt="Screenshot 2026-05-14 at 22 48 25" src="https://github.com/user-attachments/assets/34eea6be-1d1f-46dc-8032-e014399370a8" />
+
+<br> <ins> Make Scenario </ins> : Google Slides and AI Stuff (Part 1)
+<br> <img width="563" height="192" alt="Screenshot 2026-05-14 at 22 51 13" src="https://github.com/user-attachments/assets/e822d7b6-44a3-4822-8b46-8e6d0e8ed438" />
+
+Once the candidate uploads the document and sends it, another scenario is triggered in which the HTTP will download said document and upload it to Supabase. 
 
 
-- Automatic upload of contract once approved
 - Generation of AI profile (for the internal ads)
 - Informing the school
 - Notification of HR to remove job posting
