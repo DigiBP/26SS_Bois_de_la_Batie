@@ -68,11 +68,12 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 # 3. TO BE
 
-<img width="9420" height="1815" alt="Hiring_Apprentice_TO-BE" src="https://github.com/user-attachments/assets/d0aea8c2-915e-4299-bcdb-66c828d09791" />
+<img width="9420" height="1815" alt="Hiring_Apprentice_TO-BE" src="https://github.com/user-attachments/assets/f7b5cacd-40b4-41f8-9000-d8bfaef2adad" />
+
 
 ## 3.1 Process Optimizations
 
-- Set up of Google forms to have standardized input (Hidden identifier for the candidate althroughout the process)
+- Set up of the form to have standardized input (Hidden identifier for the candidate throughout the process)
 
 
 
@@ -80,13 +81,19 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ### 3.2.1 Automation of email sending to candidate and guardian
 
-Once the candidate accepts the offer, the process of obtaining their personal information begins. 
+Once the candidate accepts the offer, the process of obtaining their personal information (and their guardian's) begins. This action is triggered in Camunda when the HR user confirms the candidate's acceptance of the offer.
 
-<img width="923" height="217" alt="Screenshot 2026-05-13 at 15 50 58" src="https://github.com/user-attachments/assets/077c1146-f250-49e2-8899-0e9120db7097" />
+<ins> Make Scenario </ins> : Email send form to Apprentice
 
-The candidate and their guardian receives an email prompting them to complete an employee form. This includes information that will eventually be used to finalize the contract.
+<img width="880" height="675" alt="Screenshot 2026-05-14 at 17 07 32" src="https://github.com/user-attachments/assets/fc0ed8fb-9d7d-46f3-82b0-9885bc0ba5ed" />
 
-<u>Make Scenario</u>: Ingration HTTP Gmail
+The candidate and their guardian receive an email prompting them to complete an employee form. This includes information that will eventually be used to finalize the contract.
+
+<ins> Make Scenario </ins> : Online Form with Apprentice Data
+
+<img width="1177" height="244" alt="Screenshot 2026-05-14 at 17 09 53" src="https://github.com/user-attachments/assets/69b248d0-b72d-4cf8-a52c-6b2148eccc50" />
+
+
 
 
 - DMN table automation for salary calculation
