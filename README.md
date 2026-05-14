@@ -72,9 +72,33 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 ## 3.1 Process Optimizations
 
-- Set up of the form to have standardized input (Hidden identifier for the candidate throughout the process)
+### 3.1.1 Standard Fill out Form
+
+A standardized input form was set up to ensure consistent data collection, making it easier to automatically populate the apprenticeship contract template.
+
+## 3.2 Systematic Corrections
+
+Corrections have traditionally been a significant time drain for HR users, involving back-and-forth emails and calls, as well as manual updates to both the contract and the database. To address this pain point, we implemented a systematic correction process.
+
+There are two points in the process where corrections can be made. First, once the candidate submits their form, the HR user can review and adjust any information directly in Camunda before proceeding. Second, when the candidate (and their guardian, if applicable) receives the contract for signing, they can flag any errors by clicking a dedicated correction link in the email. They simply describe the issue, and the HR user — who has full visibility over all requested changes — can then update the data in Camunda, regenerate the contract, and have the changes automatically reflected in Supabase.
+
+This approach reduces unnecessary back-and-forth between parties, ensures that all changes are documented, and keeps the overall process moving efficiently.
+
+<br> <ins> Camunda Task Modeler </ins> : Pre-Contract Generation (First Instance of Corrections)
+<img width="1271" height="658" alt="Screenshot 2026-05-14 at 18 07 04" src="https://github.com/user-attachments/assets/bebe391a-f77e-4ffc-9356-90aecc90e32c" />
 
 
+<br> <ins> Fill out Form </ins> : Correction Request (Second Instance of Corrections)
+<img width="629" height="474" alt="Screenshot 2026-05-14 at 18 36 07" src="https://github.com/user-attachments/assets/67f70c0b-2318-4fae-9796-4a22cbf87e76" />
+
+
+<br> <ins> Make Scenario </ins> : Supabase Update
+<img width="1075" height="282" alt="Screenshot 2026-05-14 at 18 11 59" src="https://github.com/user-attachments/assets/0973285e-e823-4cae-8766-d7884bd2b1ab" />
+
+In case of corrections, the HR user can implement them in Camunda directly. Those changes will then be reflected in Supabase via this trigger:
+
+<br> <ins> Make Scenario </ins> : Supabase Update
+<img width="1075" height="282" alt="Screenshot 2026-05-14 at 18 11 59" src="https://github.com/user-attachments/assets/0973285e-e823-4cae-8766-d7884bd2b1ab" />
 
 ## 3.2 Automations
 
@@ -82,16 +106,19 @@ Once the contract is signed, HR must manually trigger each wrap-up action in seq
 
 Once the candidate accepts the offer, the process of obtaining their personal information (and their guardian's) begins. This action is triggered in Camunda when the HR user confirms the candidate's acceptance of the offer.
 
-<br> <ins> Camunda Task Modeler </ins> : HR user Confirmation
+<br> <ins> Camunda Task Modeler </ins> : HR user Confirmation of Offer Acceptance
 
 <img width="693" height="232" alt="Screenshot 2026-05-14 at 17 47 15" src="https://github.com/user-attachments/assets/f2b5942b-91ed-4102-9b88-5c7e730223ea" />
-
 
 <br> <ins> Make Scenario </ins> : Email send form to Apprentice
 
 <img width="603" height="260" alt="Screenshot 2026-05-14 at 17 10 49" src="https://github.com/user-attachments/assets/0b8242e0-958f-48f0-97f5-7818937681b4" />
 
 The candidate and their guardian receive an email prompting them to complete an employee form. This includes information that will eventually be used to finalize the contract.
+
+<br> <ins> Email received by the candidate
+
+<img width="392" height="340" alt="Screenshot 2026-05-14 at 18 05 32" src="https://github.com/user-attachments/assets/4418df57-fe4e-4d01-836c-cf0545cd76b2" />
 
 <br> <ins> Make Scenario </ins> : Online Form with Apprentice Data
 
@@ -108,10 +135,23 @@ In Supabase, there are two tables: one for candidates and another for guardians,
 This is the Decision Key Points Apprenticeship DMN table. It defines salary and holiday entitlements by job type, using a "First" hit policy.
 The introduction of such a process reduces the time employees need to map the different values each time a contract is created. Another benefit is that this table can be easily revised should new information or regulations be introduced. 
 
-Once the information is extracted, the HR user can verify all required information instantly. It is essential that a user task be put in place in this part of the process to ensure that the information to be input into the contract is correct and done to the best of the user's knowledge. The HR user needs to click the "Confirm" button to proceed. 
+Once the information is extracted, the HR user can verify all required information instantly. It is essential that a user task be put in place in this part of the process to ensure that the information to be input into the contract is correct and done to the best of the user's knowledge. The HR user needs to tick the box "Contract Approved" in Camunda to proceed. 
 
-- Population of the template contract from information received from candidate and the salary from DMN
-- Set up of automatic sending to guardians for candidates under 18
+<br> <ins> Camunda Task Modeler </ins>: HR User Confirmation of Contract
+
+<img width="1271" height="658" alt="Screenshot 2026-05-14 at 18 07 04" src="https://github.com/user-attachments/assets/197c881e-e48f-445d-a8ce-69226579cf42" />
+
+### 3.2.3. Population of the Apprentice Contract template form
+
+<br> <ins> Make Scenario </ins> : PDF Generation and Send email
+
+<img width="1051" height="285" alt="Screenshot 2026-05-14 at 18 18 19" src="https://github.com/user-attachments/assets/65520257-3e99-40b2-9fe4-58bc224ad585" />
+
+### 3.2.4. Set up of automatic sending to guardians for candidates under 18
+
+Once the HR user confirms the data has been received in Camunda, the Apprentice contract will be generated and uploaded to Supabase. In the latter part of the scenario, a router has been put in place to determine whether the contract should be sent only to the candidate or to the candidate and their respective guardian. It uses the aforementioned variable "is_adult," created earlier in the process.
+
+
 - Automatic upload of contract once approved
 - Generation of AI profile (for the internal ads)
 - Informing the school
