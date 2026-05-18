@@ -200,6 +200,8 @@ ADD PICTURE OF MAIL
 
 ### 4.1 Conclusion
 
+This project successfully demonstrated how the apprentice hiring and contracting process can be optimized through workflow automation and process standardization. By integrating Camunda, Make, Supabase, and AI-supported functionalities, several manual and repetitive tasks were automated, including data collection, contract generation, correction handling, stakeholder notifications, and onboarding preparation. The redesigned TO-BE process reduces administrative workload, minimizes errors, improves transparency between stakeholders, and creates a more efficient and user-friendly experience for both HR employees and candidates. Additionally, the implementation of validation mechanisms and centralized data management ensures greater consistency and compliance throughout the process.
+
 ### 4.2 Recommendations
 
-XXX
+For future improvements, the process could be further enhanced by integrating digital signature solutions to eliminate the need for manual contract uploads and speed up approvals. Additional security measures, such as encrypted document sharing and role-based access management, should also be considered to strengthen data protection and compliance. Furthermore, the AI-generated onboarding profiles and internal advertisement materials could be expanded with customizable templates and branding options. Finally, implementing analytics and monitoring dashboards would allow HR departments to track process performance, identify bottlenecks, and continuously optimize the workflow over time.
