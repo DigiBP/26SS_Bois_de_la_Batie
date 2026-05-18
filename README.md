@@ -171,16 +171,19 @@ If the candidate signs the contract, they will need to click the first link in t
 Once the candidate uploads the document and sends it, another scenario is triggered in which the HTTP will download said document and upload it to Supabase. 
 
 ### 3.2.7. Generation of AI profile (for the internal ads)
+<br> <ins> Make Scenario </ins>: Google Slides and AI Stuff (Part 2)
+SCREENSHOT MAKE 1 (from 2nd supabase until upload in supabase)
 
-After the signed contract is uploaded, the system automatically generates an AI-based profile for internal advertisements. Using the candidate’s submitted data and profile picture, ChatGPT creates personalized content such as a welcome text, fun fact, and image prompt. Based on this prompt, an AI-generated profile image is created and stored in the database for later use in internal communication materials and onboarding presentations.
+After the signed contract is uploaded, the system automatically generates an AI-based profile for internal advertisements. Using the candidate’s submitted data, ChatGPT creates personalized content such as a welcome text, fun fact, and image prompt. Make takes the image promt and the profile picture from Supabase to create an edited fun profile picture. Taking the text and the picture a Google slide is being created and stored for later use.
+SCREENSHOT WELCOME SLIDE 2
 
-### 3.2.8. Informing the school
-
-Once the apprenticeship contract process is completed, the system automatically sends a notification email to the corresponding school. The email contains essential information such as the student’s name and apprenticeship period, ensuring that the school is informed about the placement while respecting data protection limitations.
-
-### 3.2.9. Notification for HR to remove job posting
-
-After the apprenticeship process is finalized, the system automatically sends a notification to the HR department, informing them that the position has been filled. This allows HR to remove or deactivate the related job posting and keep recruitment platforms up to date.
+### 3.2.8. Informing the school and notify HR to remove job posting
+<br> <ins> Make Scenario </ins>: Google Slides and AI Stuff (Part 3)
+ADD PICTURE OF MAKE 4
+Once the contracting process is finished, the system automatically sends a notification email to the corresponding school. The email contains essential information such as the student’s name and apprenticeship period.
+ADD PICTURE OF MAIL
+Directly after that the system automatically sends a notification to the HR department, informing them that the position has been filled. This allows HR to remove or deactivate the related job posting and keep recruitment platforms up to date.
+ADD PICTURE OF MAIL 
 
 ## 3.3 Technologies 
 
